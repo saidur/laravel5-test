@@ -11,9 +11,16 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::any('/', function () {
     return view('welcome');
-});
+});*/
+
+Route::any('/', 'ProductController@index');
+
+Route::any('/add', 'ProductController@save');
+
+
+
 
 /*
 |--------------------------------------------------------------------------
